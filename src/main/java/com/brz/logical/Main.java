@@ -9,14 +9,16 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("logical and functional");
         System.out.println("enter the choice");
-        System.out.println("1.fibonacci series ");
+        System.out.println("1.fibonacci series \n 2.perfect number");
         Scanner choice = new Scanner(System.in);
        int option =choice.nextInt();
        switch (option){
            case 1:
                fibonacciNumber();
                break;
-
+           case 2:
+               perfectNumber();
+               break;
        }
     }
 }
