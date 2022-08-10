@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("logical and functional");
         System.out.println("enter the choice");
-        System.out.println("1.fibonacci series \n 2.perfect number \n 3.prime number ");
+        System.out.println("1.fibonacci series \n 2.perfect number \n 3.prime number \n 4.reverse number ");
 
         Scanner choice = new Scanner(System.in);
         int option = choice.nextInt();
@@ -22,6 +22,8 @@ public class Main {
             case 3:
                 primeNumber();
                 break;
+            case 4:
+                reverseNumber();
        }
     }
 }
