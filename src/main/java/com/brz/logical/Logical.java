@@ -31,6 +31,43 @@ public static void perfectNumber(){
         System.out.println("Given number is not Perfect");
     }
 }
+public static void primeNumber(){
+    int num, i, count=0;
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter a Number: ");
+    num = scanner.nextInt();
+
+    for(i=2; i<num; i++)
+    {
+        if(num%i == 0)
+        {
+            count++;
+            break;
+        }
+    }
+
+    if(count==0)
+        System.out.println("\nIt is a Prime Number.");
+    else
+        System.out.println("\nIt is not a Prime Number.");
+    }
+    public static void reverseNumber(){
+
+        int num, rem, rev=0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a Number: ");
+        num = scanner.nextInt();
+
+        while(num!=0) {
+            rem = num%10;
+            rev = (rev*10) + rem;
+            num = num/10;
+        }
+
+        System.out.println("\nReverse = " +rev);
+    }
 }
+
+
 
 
